@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arnest 不鏽鋼雪平鍋｜中文使用說明書</title>
+
+  <style>
+    :root{
+      --ink:#2f2a25;
+      --soft:#f7f1e8;
+      --card:#fffdf8;
+      --line:#e7d9c8;
+      --accent:#b8855b;
+      --accent-dark:#7b5638;
+      --warning:#b94b3f;
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","Microsoft JhengHei",sans-serif;
+      background:var(--soft);
+      color:var(--ink);
+      line-height:1.75;
+    }
+
+    .page{
+      max-width:860px;
+      margin:0 auto;
+      padding:32px 18px 48px;
+    }
+
+    .manual{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:30px;
+      box-shadow:0 8px 28px rgba(110,76,45,.08);
+    }
+
+    .brand{
+      text-align:center;
+      margin-bottom:28px;
+      padding-bottom:22px;
+      border-bottom:1px solid var(--line);
+    }
+
+    .label{
+      display:inline-block;
+      background:#f2e2d0;
+      color:var(--accent-dark);
+      border-radius:999px;
+      padding:4px 12px;
+      font-size:13px;
+      letter-spacing:.12em;
+      margin-bottom:10px;
+    }
+
+    h1{
+      margin:0;
+      font-size:28px;
+      line-height:1.35;
+    }
+
+    .subtitle{
+      margin-top:8px;
+      color:#74675d;
+      font-size:15px;
+    }
+
+    h2{
+      margin:30px 0 14px;
+      padding-left:10px;
+      border-left:5px solid var(--accent);
+      color:var(--accent-dark);
+      font-size:20px;
+    }
+
+    p{
+      margin:0 0 10px;
+    }
+
+    ul{
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+
+    li{
+      position:relative;
+      padding-left:1.4em;
+      margin:8px 0;
+    }
+
+    li::before{
+      content:"•";
+      position:absolute;
+      left:.25em;
+      color:var(--accent);
+      font-weight:bold;
+    }
+
+    .notice{
+      background:#fff4f1;
+      border:1px solid #efc6be;
+      color:var(--warning);
+      border-radius:16px;
+      padding:14px 16px;
+      margin:18px 0;
+      font-weight:700;
+    }
+
+    .highlight{
+      background:#fff1ee;
+      border:1px solid #efc3bc;
+      border-radius:14px;
+      padding:12px 14px 12px 2.1em !important;
+      margin:16px 0;
+      color:#b94b3f;
+      font-weight:700;
+    }
+
+    .highlight::before{
+      content:"⚠";
+      left:12px;
+      color:#d05545;
+    }
+
+    .compat-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:10px;
+      margin-top:12px;
+    }
+
+    .chip{
+      background:#fbf4ec;
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:10px 12px;
+    }
+
+    table{
+      width:100%;
+      border-collapse:separate;
+      border-spacing:0;
+      overflow:hidden;
+      border:1px solid var(--line);
+      border-radius:18px;
+      margin-top:14px;
+    }
+
+    th,td{
+      padding:13px 15px;
+      border-bottom:1px solid var(--line);
+      text-align:left;
+      font-size:15px;
+    }
+
+    th{
+      width:35%;
+      background:#f3e7da;
+      color:#5f422b;
+    }
+
+    tr:last-child th,
+    tr:last-child td{
+      border-bottom:none;
+    }
+
+    .page-break{
+      height:1px;
+      margin:34px 0;
+      background:linear-gradient(to right,transparent,var(--line),transparent);
+    }
+
+    .footer{
+      margin-top:30px;
+      padding-top:18px;
+      border-top:1px solid var(--line);
+      text-align:center;
+      color:#7b7067;
+      font-size:13px;
+    }
+
+    @media print{
+      body{
+        background:#fff;
+      }
+
+      .manual{
+        border:none;
+        box-shadow:none;
+      }
+
+      .page-break{
+        page-break-after:always;
+        background:none;
+      }
+    }
+
+    @media (max-width:640px){
+
+      .manual{
+        padding:22px 18px;
+      }
+
+      h1{
+        font-size:24px;
+      }
+
+      .compat-grid{
+        grid-template-columns:1fr;
+      }
+
+      th,td{
+        display:block;
+        width:100%;
+      }
+
+      th{
+        border-bottom:none;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+
+    <article class="manual">
+
+      <header class="brand">
+        <div class="label">中文使用說明書</div>
+        <h1>Arnest 不鏽鋼雪平鍋</h1>
+        <div class="subtitle">
+          使用前請詳閱本說明書，並依正確方式安全使用。
+        </div>
+      </header>
+
+      <section>
+        <h2>使用前準備</h2>
+
+        <ul>
+          <li>使用前請先確認產品是否有裂痕、變形、鬆動或其他異常。</li>
+          <li>請確認手把已確實固定後再使用。</li>
+          <li>第一次使用前，請以中性清潔劑搭配柔軟海綿清洗後再使用。</li>
+          <li>初次加熱後若出現些微水痕或色澤變化，屬正常現象，不影響使用。</li>
+        </ul>
+
+      </section>
+
+      <section>
+
+        <h2>適用爐具</h2>
+
+        <p>本產品適用於以下爐具：</p>
+
+        <div class="compat-grid">
+          <div class="chip">瓦斯爐</div>
+          <div class="chip">IH 電磁爐（200V）</div>
+          <div class="chip">電熱爐／電陶爐</div>
+          <div class="chip">鹵素爐等一般加熱爐具</div>
+        </div>
+
+      </section>
+
+      <section>
+
+        <h2>重要安全注意事項</h2>
+
+        <div class="notice">
+          請勿空燒。空燒可能造成鍋具變形、變色、損壞，甚至引發危險。
+        </div>
+
+        <ul>
+
+          <li class="highlight">
+            烹調中或剛使用後，鍋身與手把溫度較高，請使用隔熱手套或鍋布拿取，避免燙傷。
+          </li>
+
+          <li>請將鍋具放置於爐具中央，確認穩定後再開始加熱。</li>
+
+          <li>請避免火焰超出鍋底，以免手把過熱或造成危險。</li>
+
+          <li>請勿在鍋內裝滿水的狀態下加熱，以免沸騰溢出造成燙傷。</li>
+
+          <li>加熱時請勿將臉部或手靠近鍋口，以免被蒸氣燙傷。</li>
+
+          <li>請避免強烈撞擊、摔落或施加過大外力，以免鍋具變形或損壞。</li>
+
+          <li class="highlight">
+            本產品不可用於油炸料理。
+          </li>
+
+          <li>本產品不可放入微波爐或烤箱使用。</li>
+
+          <li>若加熱途中需要移動鍋具，請務必先關火再移動。</li>
+
+          <li>重新加熱味噌湯等易結塊料理時，請充分攪拌後再加熱，以免突然沸騰噴濺。</li>
+
+        </ul>
+
+      </section>
+
+      <section>
+
+        <h2>瓦斯爐使用注意事項</h2>
+
+        <ul>
+          <li>請調整火力，避免火焰從鍋底外側竄出。</li>
+          <li>請注意手把不要接近火源。</li>
+          <li>請勿在瓦斯爐上空燒鍋具。</li>
+          <li>若使用卡式爐，請確認鍋具穩定放置後再使用。</li>
+        </ul>
+
+      </section>
+
+      <div class="page-break"></div>
+
+      <section>
+
+        <h2>IH 電磁爐使用注意事項</h2>
+
+        <ul>
+          <li>使用前請詳閱電磁爐本身的使用說明。</li>
+          <li>請確認鍋底與加熱面完整貼合。</li>
+          <li>請將鍋具放置於電磁爐中央。</li>
+          <li>請勿空燒，建議使用中小火加熱。</li>
+          <li>請先放入食材或液體，再開啟電磁爐。</li>
+          <li>若加熱時出現異常聲音或震動，請降低火力或停止使用。</li>
+          <li>鍋具過熱時，手把也可能變熱，請小心拿取。</li>
+          <li>若使用 3kW 以上高火力 IH 爐且無法調整細火力時，請勿使用本產品。</li>
+        </ul>
+
+      </section>
+
+      <section>
+
+        <h2>清潔與保養方式</h2>
+
+        <ul>
+          <li>使用後請以中性清潔劑搭配柔軟海綿清洗，並立即擦乾水分。</li>
+          <li>請勿長時間將料理、鹽分或酸性食材留在鍋內，以免變色或生鏽。</li>
+          <li>清洗後請充分擦乾，並存放於乾燥通風處。</li>
+          <li>若出現焦垢，請勿使用鋼刷或尖銳工具強行刮除。建議先以熱水浸泡軟化後再清潔。</li>
+          <li>若出現白色水垢、彩虹紋或金屬色澤變化，多為自然現象，不影響使用。</li>
+          <li>若有輕微生鏽，可使用去污海綿搭配清潔劑清除。</li>
+          <li>請勿使用含氯漂白劑或強酸強鹼清潔劑。</li>
+        </ul>
+
+      </section>
+
+      <section>
+
+        <h2>產品規格</h2>
+
+        <table>
+
+          <tr>
+            <th>產品名稱</th>
+            <td>不鏽鋼雪平鍋</td>
+          </tr>
+
+          <tr>
+            <th>尺寸</th>
+            <td>15cm／18cm／20cm</td>
+          </tr>
+
+          <tr>
+            <th>滿水容量</th>
+            <td>1.2L／1.8L／2.4L</td>
+          </tr>
+
+          <tr>
+            <th>材質</th>
+            <td>鍋身：不鏽鋼（鉻 16%）／手把：不鏽鋼</td>
+          </tr>
+
+          <tr>
+            <th>鍋身厚度</th>
+            <td>約 0.7mm</td>
+          </tr>
+
+          <tr>
+            <th>產地</th>
+            <td>日本製</td>
+          </tr>
+
+          <tr>
+            <th>製造商</th>
+            <td>Arnest 株式會社</td>
+          </tr>
+
+        </table>
+
+      </section>
+
+      <footer class="footer">
+        本頁為中文翻譯整理版，請搭配原商品包裝與官方說明一併確認後使用。
+      </footer>
+
+    </article>
+
+  </main>
+
+</body>
+</html>
