@@ -1,303 +1,61 @@
-<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>めばえ 2026年7月号｜アンパンマン おふろせんたくき｜日本親子選物誌</title>
-  <meta name="description" content="《めばえ 2026年7月号》附錄為アンパンマン おふろせんたくき，適合喜歡角色遊戲、洗澡互動與親子共玩的幼兒家庭。日本親子選物誌整理。" />
-  <meta property="og:title" content="めばえ 2026年7月号｜アンパンマン おふろせんたくき" />
-  <meta property="og:description" content="日本親子選物誌：小學館幼兒雜誌《めばえ》2026年7月号，主附錄為アンパンマン おふろせんたくき。" />
-  <meta property="og:image" content="cover.jpg" />
-  <style>
-    :root{
-      --cream:#fffaf3;
-      --paper:#ffffff;
-      --ink:#302b27;
-      --muted:#786f66;
-      --line:#eadfce;
-      --accent:#ee4e42;
-      --accent2:#f7c948;
-      --blue:#55b8d9;
-      --soft-red:#fff1ee;
-      --soft-yellow:#fff7d7;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","Noto Sans JP","Segoe UI",sans-serif;
-      color:var(--ink);
-      background:var(--cream);
-      line-height:1.75;
-    }
-    .wrap{max-width:980px;margin:0 auto;padding:22px}
-    .hero{
-      background:linear-gradient(180deg,#fff5cf 0%,#fff 68%);
-      border:1px solid var(--line);
-      border-radius:28px;
-      padding:26px;
-      box-shadow:0 12px 32px rgba(92,60,28,.08);
-      overflow:hidden;
-    }
-    .breadcrumb{
-      color:var(--muted);
-      font-size:13px;
-      margin-bottom:12px;
-      letter-spacing:.02em;
-    }
-    .tag{
-      display:inline-flex;
-      background:var(--soft-red);
-      color:var(--accent);
-      border-radius:999px;
-      padding:7px 12px;
-      font-weight:800;
-      font-size:13px;
-      margin-bottom:14px;
-    }
-    h1{
-      font-size:clamp(30px,5vw,48px);
-      line-height:1.18;
-      margin:0 0 14px;
-      letter-spacing:.02em;
-    }
-    .subtitle{
-      color:var(--muted);
-      font-size:17px;
-      margin:0 0 22px;
-    }
-    .hero-grid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:28px;
-      align-items:center;
-    }
-    .cover{
-      background:#fff;
-      border:1px solid var(--line);
-      border-radius:22px;
-      padding:10px;
-    }
-    .cover img{
-      width:100%;
-      display:block;
-      border-radius:16px;
-    }
-    .points{
-      display:grid;
-      gap:10px;
-      margin-top:16px;
-    }
-    .point{
-      background:#fffaf5;
-      border:1px solid #f0dfc9;
-      border-radius:16px;
-      padding:12px 14px;
-      font-size:15px;
-    }
-    .section{
-      background:var(--paper);
-      border:1px solid var(--line);
-      border-radius:24px;
-      padding:26px;
-      margin-top:20px;
-    }
-    .section h2{
-      margin:0 0 14px;
-      font-size:24px;
-      line-height:1.35;
-    }
-    .lead{
-      margin-top:0;
-      font-size:17px;
-      color:#4b4038;
-    }
-    .feature-grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:14px;
-      margin-top:18px;
-    }
-    .feature{
-      background:#fffaf5;
-      border:1px solid #f0dfc9;
-      border-radius:18px;
-      padding:18px;
-    }
-    .feature strong{
-      display:block;
-      color:#8a4b2a;
-      margin-bottom:6px;
-    }
-    .video-box{
-      background:linear-gradient(135deg,#fff7d7,#ffffff);
-      border:1px solid #ecd682;
-      border-radius:22px;
-      padding:22px;
-      display:flex;
-      justify-content:space-between;
-      gap:18px;
-      align-items:center;
-    }
-    .btn{
-      display:inline-block;
-      text-decoration:none;
-      background:var(--accent);
-      color:#fff;
-      font-weight:800;
-      padding:12px 18px;
-      border-radius:999px;
-      white-space:nowrap;
-    }
-    .editor-note{
-      background:#effaff;
-      border:1px solid #bfe5f3;
-      border-radius:20px;
-      padding:20px;
-    }
-    .spec{
-      width:100%;
-      border-collapse:separate;
-      border-spacing:0;
-      overflow:hidden;
-      border:1px solid var(--line);
-      border-radius:18px;
-      background:#fff;
-    }
-    .spec th,.spec td{
-      text-align:left;
-      padding:13px 15px;
-      border-bottom:1px solid var(--line);
-      vertical-align:top;
-    }
-    .spec tr:last-child th,.spec tr:last-child td{border-bottom:0}
-    .spec th{
-      width:32%;
-      background:#fff8ee;
-      color:#6d4b31;
-      font-weight:800;
-    }
-    .footer{
-      text-align:center;
-      color:var(--muted);
-      font-size:13px;
-      padding:28px 0 10px;
-    }
-    @media (max-width:760px){
-      .wrap{padding:14px}
-      .hero{padding:18px;border-radius:22px}
-      .hero-grid,.feature-grid{grid-template-columns:1fr}
-      .section{padding:20px;border-radius:20px}
-      .video-box{display:block}
-      .btn{margin-top:12px}
-      .spec th,.spec td{display:block;width:100%}
-      .spec th{border-bottom:0;padding-bottom:4px}
-      .spec td{padding-top:4px}
-    }
-  </style>
-</head>
-<body>
-  <main class="wrap">
-    <section class="hero">
-      <div class="breadcrumb">日本親子選物誌 ｜ 幼兒雜誌 ｜ 角色附錄</div>
-      <span class="tag">小學館幼兒雜誌 × アンパンマン洗澡遊戲附錄</span>
-      <div class="hero-grid">
-        <div>
-          <h1>めばえ 2026年7月号<br>アンパンマン おふろせんたくき</h1>
-          <p class="subtitle">小學館幼兒雜誌《めばえ》2026年7月号，主打附錄為「アンパンマン おふろせんたくき」。以孩子熟悉的麵包超人角色，結合洗澡時間、轉動機關與想像遊戲，適合喜歡互動型附錄的幼兒家庭。</p>
-          <div class="points">
-            <div class="point">✔ 附錄主題明確：アンパンマン おふろせんたくき</div>
-            <div class="point">✔ 適合洗澡情境與親子互動遊戲</div>
-            <div class="point">✔ 角色辨識度高，對幼兒有吸引力</div>
-          </div>
-        </div>
-        <div class="cover">
-          <img src="cover.jpg" alt="めばえ 2026年7月号 アンパンマン おふろせんたくき 封面">
-        </div>
-      </div>
-    </section>
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>めばえ 2026年7月号｜日本親子選物誌</title>
+<style>
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","Noto Sans JP",sans-serif;background:#faf8f3;color:#333}
+.container{max-width:980px;margin:auto;padding:24px}
+.hero{display:grid;grid-template-columns:340px 1fr;gap:32px;background:#fff;border-radius:24px;padding:28px;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+img{width:100%;border-radius:16px}
+.badge{display:inline-block;background:#fff1e7;color:#d85b2d;padding:6px 12px;border-radius:999px;font-weight:700}
+h1{font-size:42px;margin:16px 0 10px}
+h2{margin-top:0}
+.card{background:#fff;border-radius:22px;padding:24px;margin-top:22px}
+table{width:100%;border-collapse:collapse}th,td{padding:12px;border-bottom:1px solid #eee;text-align:left}th{width:28%;background:#faf5eb}
+.btn{display:inline-block;background:#e44f37;color:#fff;text-decoration:none;padding:12px 18px;border-radius:999px;font-weight:700}
+@media(max-width:760px){.hero{grid-template-columns:1fr}h1{font-size:32px}}
+</style></head>
+<body><div class="container">
+<div class="hero">
+<div><img src="cover.jpg" alt="cover"></div>
+<div>
+<span class="badge">日本親子選物誌｜幼兒雜誌</span>
+<h1>めばえ 2026年7月号</h1>
+<p><strong>本期最大亮點：</strong>附錄 <strong>アンパンマン おふろせんたくき</strong>，結合麵包超人角色與洗澡情境，讓孩子透過角色扮演與操作遊戲，增加親子互動的樂趣。</p>
+<p>《めばえ》是小學館長年出版的幼兒雜誌，每期皆以熱門角色搭配互動式附錄，內容結合故事、遊戲、貼紙與生活主題，深受日本親子家庭喜愛。</p>
+</div></div>
 
-    <section class="section">
-      <h2>這一期的選物重點</h2>
-      <p class="lead">這期《めばえ》的重點不是單純閱讀，而是「雜誌內容＋角色附錄＋親子遊戲」的組合。對幼兒來說，能動手操作、能在生活情境中玩，通常比單純紙本內容更容易產生興趣。</p>
-      <div class="feature-grid">
-        <div class="feature">
-          <strong>01｜洗澡時間可延伸</strong>
-          以洗衣機造型作為附錄主題，適合搭配洗澡、玩水或生活習慣遊戲。
-        </div>
-        <div class="feature">
-          <strong>02｜角色吸引力高</strong>
-          アンパンマン是日本幼兒雜誌常見人氣角色，封面辨識度強。
-        </div>
-        <div class="feature">
-          <strong>03｜適合親子共玩</strong>
-          需要組裝、操作或示範的附錄，適合由大人陪同孩子一起玩。
-        </div>
-      </div>
-    </section>
+<div class="card">
+<h2>📹 開箱影片</h2>
+<p>建議購買前先觀看實際操作方式，更容易了解附錄尺寸、玩法與完成後的效果。</p>
+<p><a class="btn" target="_blank" href="https://www.youtube.com/watch?v=zX9y6M5Xy0Y&t=3s">觀看 YouTube 開箱</a></p>
+</div>
 
-    <section class="section">
-      <h2>開箱影片</h2>
-      <div class="video-box">
-        <div>
-          <p class="lead" style="margin-bottom:6px;">建議先看影片確認附錄大小、操作方式與實際組裝後的效果。</p>
-          <p style="margin:0;color:var(--muted);font-size:14px;">影片來源：YouTube 公開影片連結</p>
-        </div>
-        <a class="btn" href="https://www.youtube.com/watch?v=zX9y6M5Xy0Y&t=3s" target="_blank" rel="noopener">觀看 YouTube 開箱</a>
-      </div>
-    </section>
+<div class="card">
+<h2>本期特色</h2>
+<ul>
+<li>麵包超人主題洗澡洗衣機附錄。</li>
+<li>以生活情境延伸角色扮演遊戲。</li>
+<li>雜誌內收錄多位人氣幼兒角色內容。</li>
+<li>適合親子共讀、共玩與假日互動。</li>
+</ul>
+</div>
 
-    <section class="section">
-      <h2>適合什麼樣的家庭？</h2>
-      <p>如果孩子喜歡アンパンマン、喜歡扮演家家酒，或對洗澡玩具、可操作玩具有興趣，這一期會比一般貼紙書更有吸引力。它也適合家長想把日常生活情境變成遊戲，例如「洗衣服」「洗澡」「整理物品」等概念。</p>
-      <div class="editor-note">
-        <strong>選物誌觀點：</strong><br>
-        這類日本幼兒雜誌的優勢在於附錄新鮮感強、角色吸引力高，很適合短期促銷與社群分享。但上架時要明確說明「雜誌附錄需組裝、材質與耐用度不同於一般玩具」，避免買家用玩具商品標準期待。
-      </div>
-    </section>
+<div class="card">
+<h2>日本親子選物誌觀點</h2>
+<p>這一期最大的價值在於附錄的遊戲性，而非收藏性。對 2～5 歲左右喜歡麵包超人的孩子來說，能搭配洗澡或生活情境遊玩，比一般靜態附錄更有吸引力。若作為台灣販售商品，建議搭配實際開箱影片，能有效降低家長對附錄大小與玩法的疑慮。</p>
+</div>
 
-    <section class="section">
-      <h2>商品資訊</h2>
-      <table class="spec">
-        <tr>
-          <th>日文書名</th>
-          <td>めばえ 2026年7月号</td>
-        </tr>
-        <tr>
-          <th>出版社</th>
-          <td>小学館</td>
-        </tr>
-        <tr>
-          <th>主附錄</th>
-          <td>アンパンマン おふろせんたくき</td>
-        </tr>
-        <tr>
-          <th>雜誌類型</th>
-          <td>日本幼兒雜誌／角色遊戲附錄／親子互動內容</td>
-        </tr>
-        <tr>
-          <th>適合情境</th>
-          <td>親子共玩、洗澡遊戲、角色扮演、生活習慣遊戲、幼兒雜誌體驗</td>
-        </tr>
-        <tr>
-          <th>售價資訊</th>
-          <td>封面標示特別価格 1,480円；實際售價與進口成本請以採購來源為準。</td>
-        </tr>
-        <tr>
-          <th>備註</th>
-          <td>本頁依使用者提供之封面照片與公開開箱影片整理；實際內容、材質、尺寸與附錄細節請以雜誌實物與出版社標示為準。</td>
-        </tr>
-      </table>
-    </section>
+<div class="card">
+<h2>商品資訊</h2>
+<table>
+<tr><th>日文書名</th><td>めばえ 2026年7月号</td></tr>
+<tr><th>出版社</th><td>小学館</td></tr>
+<tr><th>主附錄</th><td>アンパンマン おふろせんたくき</td></tr>
+<tr><th>封面售價</th><td>特別価格 1,480円</td></tr>
+<tr><th>影片</th><td>YouTube 公開開箱影片</td></tr>
+<tr><th>備註</th><td>內容依封面與公開影片整理，實際內容以出版社出版品為準。</td></tr>
+</table>
+</div>
 
-    <section class="section">
-      <h2>購買前小提醒</h2>
-      <p>日本幼兒雜誌附錄多為紙材、塑膠片或簡易組裝零件，重點在親子互動與短期遊戲體驗，不建議以長期耐用玩具的標準期待。若孩子年齡較小，建議由家長陪同組裝與使用。</p>
-    </section>
-
-    <footer class="footer">
-      日本親子選物誌<br>
-      本頁為商品介紹與選物整理，請以實際商品與出版社資訊為準。
-    </footer>
-  </main>
-</body>
-</html>
+<p style="text-align:center;color:#777;margin:36px 0">日本親子選物誌</p>
+</div></body></html>
