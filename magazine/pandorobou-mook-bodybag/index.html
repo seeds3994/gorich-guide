@@ -1,1 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>パンどろぼう MOOK｜コンパクトで大容量なボディバッグ〈黒〉｜日本親子選物誌</title>
+  <meta name="description" content="日本人氣繪本《パンどろぼう》推出 MOOK 特別付錄黑色ボディバッグ，適合親子外出、日常收納與輕便穿搭。Seed Guide 日本親子選物誌介紹。" />
+  <meta property="og:title" content="パンどろぼう MOOK｜コンパクトで大容量なボディバッグ〈黒〉" />
+  <meta property="og:description" content="日本親子選物誌：大人氣繪本角色パンどろぼう的黑色ボディバッグ MOOK，親子外出也實用。" />
+  <meta property="og:image" content="cover.jpg" />
+  <style>
+    :root{
+      --cream:#fffaf2;
+      --paper:#ffffff;
+      --ink:#33302d;
+      --muted:#7a7168;
+      --line:#eadfce;
+      --accent:#e94b2f;
+      --accent-soft:#fff0e8;
+      --yellow:#f8d74a;
+      --brown:#8a4b2a;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","Noto Sans JP","Segoe UI",sans-serif;
+      color:var(--ink);
+      background:var(--cream);
+      line-height:1.75;
+    }
+    a{color:inherit}
+    .wrap{max-width:980px;margin:0 auto;padding:22px}
+    .hero{
+      background:linear-gradient(180deg,#fff8df 0%,#fff 64%);
+      border:1px solid var(--line);
+      border-radius:28px;
+      padding:26px;
+      box-shadow:0 12px 32px rgba(92,60,28,.08);
+      overflow:hidden;
+    }
+    .breadcrumb{
+      font-size:13px;
+      color:var(--muted);
+      margin-bottom:12px;
+      letter-spacing:.02em;
+    }
+    .tag{
+      display:inline-flex;
+      gap:6px;
+      align-items:center;
+      background:var(--accent-soft);
+      color:var(--accent);
+      border-radius:999px;
+      padding:7px 12px;
+      font-size:13px;
+      font-weight:700;
+      margin-bottom:14px;
+    }
+    h1{
+      font-size:clamp(28px,5vw,48px);
+      line-height:1.18;
+      margin:0 0 14px;
+      letter-spacing:.02em;
+    }
+    .subtitle{
+      font-size:17px;
+      color:var(--muted);
+      margin:0 0 24px;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:28px;
+      align-items:center;
+    }
+    .cover{
+      background:#fff;
+      border-radius:22px;
+      padding:10px;
+      border:1px solid var(--line);
+    }
+    .cover img{
+      width:100%;
+      display:block;
+      border-radius:16px;
+    }
+    .note-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:22px;
+    }
+    .note-card h2{
+      margin:0 0 10px;
+      font-size:22px;
+    }
+    .points{
+      display:grid;
+      gap:10px;
+      margin-top:16px;
+    }
+    .point{
+      background:#fffaf5;
+      border:1px solid #f0dfc9;
+      border-radius:16px;
+      padding:12px 14px;
+      font-size:15px;
+    }
+    .section{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:26px;
+      margin-top:20px;
+    }
+    .section h2{
+      margin:0 0 14px;
+      font-size:24px;
+      line-height:1.35;
+    }
+    .lead{
+      font-size:17px;
+      color:#4b4038;
+      margin-top:0;
+    }
+    .feature-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+      margin-top:18px;
+    }
+    .feature{
+      background:#fffaf5;
+      border:1px solid #f0dfc9;
+      border-radius:18px;
+      padding:18px;
+    }
+    .feature strong{
+      display:block;
+      margin-bottom:6px;
+      color:var(--brown);
+    }
+    .video-box{
+      background:linear-gradient(135deg,#fff4e8,#ffffff);
+      border:1px solid #f1d9c4;
+      border-radius:22px;
+      padding:22px;
+      display:flex;
+      justify-content:space-between;
+      gap:18px;
+      align-items:center;
+    }
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      background:var(--accent);
+      color:#fff;
+      font-weight:800;
+      padding:12px 18px;
+      border-radius:999px;
+      white-space:nowrap;
+    }
+    .spec{
+      width:100%;
+      border-collapse:separate;
+      border-spacing:0;
+      overflow:hidden;
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:#fff;
+    }
+    .spec th,.spec td{
+      text-align:left;
+      padding:13px 15px;
+      border-bottom:1px solid var(--line);
+      vertical-align:top;
+    }
+    .spec tr:last-child th,.spec tr:last-child td{border-bottom:0}
+    .spec th{
+      width:32%;
+      background:#fff8ee;
+      color:#6d4b31;
+      font-weight:800;
+    }
+    .editor-note{
+      background:#fff8dd;
+      border:1px solid #ecd682;
+      border-radius:20px;
+      padding:20px;
+    }
+    .footer{
+      text-align:center;
+      color:var(--muted);
+      font-size:13px;
+      padding:28px 0 10px;
+    }
+    @media (max-width:760px){
+      .wrap{padding:14px}
+      .hero{padding:18px;border-radius:22px}
+      .hero-grid,.feature-grid{grid-template-columns:1fr}
+      .section{padding:20px;border-radius:20px}
+      .video-box{display:block}
+      .btn{margin-top:12px}
+      .spec th,.spec td{display:block;width:100%}
+      .spec th{border-bottom:0;padding-bottom:4px}
+      .spec td{padding-top:4px}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="breadcrumb">Seed Guide ｜ 日本親子選物誌 ｜ MOOK 付錄包款</div>
+      <span class="tag">日本人氣繪本角色 × 親子外出包</span>
+      <div class="hero-grid">
+        <div>
+          <h1>パンどろぼう MOOK<br>コンパクトで大容量なボディバッグ〈黒〉</h1>
+          <p class="subtitle">大人氣繪本《パンどろぼう》的 MOOK 特別付錄，推出黑色輕便ボディバッグ。低調黑色搭配パンどろぼう刺繡，親子外出、日常散步、旅行小物收納都很實用。</p>
+          <div class="points">
+            <div class="point">✔ 黑色包身，較適合日常穿搭與親子共用</div>
+            <div class="point">✔ 包面有パンどろぼう角色刺繡，低調但有辨識度</div>
+            <div class="point">✔ 主打「コンパクトで大容量」，適合放手機、錢包、飲料與外出小物</div>
+          </div>
+        </div>
+        <div class="cover">
+          <img src="cover.jpg" alt="パンどろぼう MOOK コンパクトで大容量なボディバッグ 黒 封面">
+        </div>
+      </div>
+    </section>
 
+    <section class="section">
+      <h2>這本 MOOK 的選物重點</h2>
+      <p class="lead">這款不是單純收藏型付錄，而是偏向「可以實際帶出門」的親子外出小包。黑色包款比鮮豔角色包更容易搭配大人服裝，小朋友使用也不會過度幼稚，適合想找日常實用款的家庭。</p>
+      <div class="feature-grid">
+        <div class="feature">
+          <strong>01｜親子都能用</strong>
+          肩帶可調整，能配合大人或孩子的身形使用，外出時可當輕便斜背包。
+        </div>
+        <div class="feature">
+          <strong>02｜容量感實用</strong>
+          封面示意可放入手機、飲料、錢包等外出物品，適合短程出門。
+        </div>
+        <div class="feature">
+          <strong>03｜背面拉鍊口袋</strong>
+          背面有拉鍊收納口袋，可放較常取用或想分開收納的小物。
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>開箱影片</h2>
+      <div class="video-box">
+        <div>
+          <p class="lead" style="margin-bottom:6px;">想確認包款大小、實際背起來的比例與收納感，可以先看短影音開箱。</p>
+          <p style="margin:0;color:var(--muted);font-size:14px;">影片來源：TikTok 使用者公開影片連結</p>
+        </div>
+        <a class="btn" href="https://www.tiktok.com/@yumyum_____yum/video/7617792162016611605" target="_blank" rel="noopener">觀看 TikTok 開箱</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>適合什麼樣的家庭？</h2>
+      <p>如果家中已經喜歡《パンどろぼう》，這款 MOOK 的吸引力會比一般無角色包更高；但即使不是重度粉絲，黑色包身與小尺寸斜背設計也有實用性。它比較適合當作親子短程外出包、孩子自己的小包，或媽媽外出時放手機與小物的輕便包。</p>
+      <div class="editor-note">
+        <strong>選物誌觀點：</strong><br>
+        這類日本 MOOK 的價值通常不只在書本本身，而是「角色人氣＋實用付錄＋限定感」。若作為台灣電商商品，主圖與介紹頁應清楚呈現包款尺寸感、容量、實背比例與收納細節，能降低消費者對付錄包品質與大小的疑慮。
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>商品資訊</h2>
+      <table class="spec">
+        <tr>
+          <th>日文書名</th>
+          <td>パンどろぼう MOOK 特別付録 コンパクトで大容量なボディバッグ〈黒〉</td>
+        </tr>
+        <tr>
+          <th>出版社</th>
+          <td>KADOKAWA／角川SSCムック</td>
+        </tr>
+        <tr>
+          <th>付錄內容</th>
+          <td>黑色ボディバッグ</td>
+        </tr>
+        <tr>
+          <th>設計特色</th>
+          <td>パンどろぼう刺繡、背面拉鍊口袋、可調式肩帶</td>
+        </tr>
+        <tr>
+          <th>使用情境</th>
+          <td>親子外出、孩子外出包、散步、旅行小物收納、日常斜背包</td>
+        </tr>
+        <tr>
+          <th>備註</th>
+          <td>本頁依商品封面資訊與公開開箱影片整理；實際尺寸、材質與出版資訊請以出版社或商品實物標示為準。</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>購買前小提醒</h2>
+      <p>MOOK 付錄包通常重點在造型、輕便與收藏實用性，不建議用一般專櫃包的承重或耐磨標準期待。若是送禮或自用，建議確認包款大小、開口方式、肩帶長度與孩子實際使用情境是否符合需求。</p>
+    </section>
+
+    <footer class="footer">
+      Seed Guide｜日本親子選物誌<br>
+      本頁為商品介紹與選物整理，請以實際商品與出版社資訊為準。
+    </footer>
+  </main>
+</body>
+</html>
