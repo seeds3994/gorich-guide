@@ -1,0 +1,308 @@
+/* ===================================================
+   日本親子選物誌 v1.0
+   https://guide.gorichtw.com
+=================================================== */
+
+:root{
+
+    --bg:#faf7f2;
+    --card:#ffffff;
+    --border:#e9e2d7;
+
+    --title:#2f2f2f;
+    --text:#555555;
+    --light:#888888;
+
+    --primary:#d38d38;
+
+    --radius:22px;
+
+    --shadow:0 8px 24px rgba(0,0,0,.06);
+
+    --max-width:1100px;
+
+}
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    font-family:
+        "Noto Sans TC",
+        "PingFang TC",
+        "Microsoft JhengHei",
+        sans-serif;
+
+    font-size:17px;
+
+    line-height:1.9;
+
+}
+
+/* ========================= */
+
+.container{
+
+    max-width:var(--max-width);
+
+    margin:auto;
+
+    padding:40px 20px 80px;
+
+}
+
+/* ========================= */
+
+header{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+.site-title{
+
+    font-size:14px;
+
+    letter-spacing:3px;
+
+    color:var(--light);
+
+    margin-bottom:15px;
+
+}
+
+h1{
+
+    font-size:44px;
+
+    color:var(--title);
+
+    line-height:1.35;
+
+    margin-bottom:10px;
+
+}
+
+.subtitle{
+
+    font-size:22px;
+
+    color:#666;
+
+}
+
+/* ========================= */
+
+.hero{
+
+    display:grid;
+
+    grid-template-columns:420px 1fr;
+
+    gap:45px;
+
+    margin-bottom:50px;
+
+    align-items:start;
+
+}
+
+/* ========================= */
+
+.cover{
+
+    background:white;
+
+    border-radius:var(--radius);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+}
+
+.cover img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+/* ========================= */
+
+.info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.info-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:19px;
+
+}
+
+/* ========================= */
+
+.card{
+
+    background:var(--card);
+
+    border-radius:var(--radius);
+
+    padding:35px;
+
+    margin-bottom:30px;
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow);
+
+}
+
+.card h2{
+
+    font-size:30px;
+
+    color:var(--title);
+
+    margin-bottom:20px;
+
+}
+
+.card p{
+
+    margin-bottom:18px;
+
+}
+
+.card ul{
+
+    padding-left:24px;
+
+}
+
+.card li{
+
+    margin-bottom:10px;
+
+}
+
+/* ========================= */
+
+.youtube{
+
+    position:relative;
+
+    padding-bottom:56.25%;
+
+    height:0;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+}
+
+.youtube iframe{
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    left:0;
+
+    top:0;
+
+}
+
+/* ========================= */
+
+footer{
+
+    margin-top:80px;
+
+    text-align:center;
+
+    color:#999;
+
+    font-size:14px;
+
+}
+
+/* ========================= */
+
+@media(max-width:900px){
+
+.hero{
+
+grid-template-columns:1fr;
+
+}
+
+.container{
+
+padding:25px 18px 60px;
+
+}
+
+h1{
+
+font-size:34px;
+
+}
+
+.subtitle{
+
+font-size:18px;
+
+}
+
+.card{
+
+padding:24px;
+
+}
+
+.card h2{
+
+font-size:24px;
+
+}
+
+.info-item{
+
+font-size:17px;
+
+}
+
+}
