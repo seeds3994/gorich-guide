@@ -1,1 +1,361 @@
-index
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>日本親子選物誌｜Baby Book 2026年8・9月號</title>
+  <meta name="description" content="日本小學館 Baby Book 2026年8・9月號介紹。本期附錄為麵包超人發光語音驗票機，內容依官方介紹與官方影片整理。" />
+  <style>
+    :root{
+      --bg:#fbf6ee;
+      --paper:#fffdf8;
+      --ink:#33302b;
+      --muted:#746f66;
+      --line:#e2d8c9;
+      --cream:#f5ebdc;
+      --accent:#b9783e;
+      --accent-soft:#f1d9b6;
+      --green:#e2eadf;
+      --blue:#e5edf4;
+      --shadow:0 14px 36px rgba(62,45,24,.10);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--ink);
+      font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","Microsoft JhengHei","PingFang TC","Noto Sans JP",Arial,sans-serif;
+      line-height:1.75;
+      letter-spacing:.02em;
+    }
+    a{color:#80512d;text-decoration:none;border-bottom:1px solid #caa77e}
+    .wrap{max-width:1080px;margin:0 auto;padding:28px 18px 48px}
+    .sheet{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:30px;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+    .top{
+      padding:30px 34px 24px;
+      background:linear-gradient(135deg,#fffaf2 0%,#f4eadb 100%);
+      border-bottom:1px solid var(--line);
+    }
+    .brand{
+      font-size:15px;
+      color:var(--muted);
+      letter-spacing:.12em;
+      margin-bottom:10px;
+    }
+    h1{
+      margin:0;
+      font-size:34px;
+      line-height:1.25;
+      font-weight:760;
+    }
+    .sub{
+      margin-top:10px;
+      color:var(--muted);
+      font-size:18px;
+    }
+    .chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:18px;
+    }
+    .chip{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:6px 12px;
+      font-size:14px;
+      color:#51483e;
+    }
+    .hero{
+      display:grid;
+      grid-template-columns:42% 1fr;
+      gap:28px;
+      padding:32px 34px 8px;
+    }
+    .cover-card{
+      border:1px solid var(--line);
+      background:var(--cream);
+      border-radius:24px;
+      padding:16px;
+      text-align:center;
+    }
+    .cover-card img{
+      width:100%;
+      max-height:560px;
+      object-fit:contain;
+      border-radius:16px;
+      background:white;
+      box-shadow:0 8px 20px rgba(0,0,0,.14);
+    }
+    .caption{margin-top:10px;font-size:12px;color:var(--muted)}
+    .intro{
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:24px;
+      background:#fff;
+    }
+    .intro h2{
+      margin-top:0;
+    }
+    .data{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+      margin-top:20px;
+    }
+    .data div{
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:12px 14px;
+      background:#fffdf9;
+    }
+    .label{
+      font-size:12px;
+      color:var(--muted);
+      margin-bottom:3px;
+      letter-spacing:.08em;
+    }
+    .value{
+      font-size:16px;
+      font-weight:650;
+    }
+    section{padding:22px 34px}
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+    }
+    .box{
+      border:1px solid var(--line);
+      border-radius:24px;
+      background:#fff;
+      padding:22px;
+    }
+    .box.highlight{background:var(--green)}
+    .box.soft{background:#fffaf2}
+    h2{
+      margin:0 0 12px;
+      font-size:21px;
+      line-height:1.35;
+    }
+    h3{
+      margin:18px 0 8px;
+      font-size:17px;
+    }
+    p{margin:0 0 12px}
+    ul,ol{margin:8px 0 0 0;padding-left:1.25em}
+    li{margin:5px 0}
+    .feature-list{
+      padding:0;
+      list-style:none;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:9px;
+    }
+    .feature-list li{
+      margin:0;
+      background:var(--cream);
+      border-radius:14px;
+      padding:9px 11px;
+    }
+    .steps{
+      padding:0;
+      list-style:none;
+      counter-reset:item;
+    }
+    .steps li{
+      counter-increment:item;
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+      margin:11px 0;
+    }
+    .steps li::before{
+      content:counter(item);
+      flex:0 0 28px;
+      height:28px;
+      border-radius:50%;
+      background:var(--accent-soft);
+      color:#4d3217;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      font-size:13px;
+    }
+    .video{
+      position:relative;
+      padding-bottom:56.25%;
+      height:0;
+      overflow:hidden;
+      border-radius:18px;
+      border:1px solid var(--line);
+      background:#111;
+    }
+    .video iframe{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      border:0;
+    }
+    .sources{
+      background:#fff9ef;
+      border-top:1px solid var(--line);
+      padding:22px 34px 30px;
+      color:var(--muted);
+      font-size:14px;
+    }
+    .small{font-size:13px;color:var(--muted)}
+    .print-note{
+      margin-top:10px;
+      font-size:12px;
+      color:var(--muted);
+    }
+    @media(max-width:780px){
+      .wrap{padding:10px}
+      .top,.hero,section,.sources{padding-left:18px;padding-right:18px}
+      h1{font-size:27px}
+      .hero,.grid,.data{grid-template-columns:1fr}
+      .feature-list{grid-template-columns:1fr}
+    }
+    @media print{
+      body{background:#fff}
+      .wrap{padding:0;max-width:none}
+      .sheet{box-shadow:none;border:none;border-radius:0}
+      .video{display:none}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="sheet">
+      <header class="top">
+        <div class="brand">日本親子選物誌</div>
+        <h1>Baby Book（寶寶月刊）<br>2026 年 8・9 月號</h1>
+        <div class="sub">Baby Magazine｜1–3歲</div>
+        <div class="chips">
+          <span class="chip">日本小學館</span>
+          <span class="chip">麵包超人主題</span>
+          <span class="chip">聲光互動附錄</span>
+          <span class="chip">交通情境遊戲</span>
+        </div>
+      </header>
+
+      <div class="hero">
+        <div class="cover-card">
+          <img src="cover.jpg" alt="Baby Book 2026年8・9月號封面">
+          <div class="caption">封面照片：實拍照片</div>
+        </div>
+
+        <div class="intro">
+          <h2>這是一本什麼樣的雜誌？</h2>
+          <p>《Baby Book》是日本小學館出版的幼兒知育雜誌，主要對象為 1、2、3 歲幼兒。官方介紹中提到，雜誌內容包含遊戲、生活習慣與知育元素，並搭配孩子熟悉的角色內容。</p>
+          <p>2026 年 8・9 月號主打麵包超人聲光互動附錄，讓孩子透過「日本車站刷卡進站」的情境進行遊戲。</p>
+
+          <div class="data">
+            <div><div class="label">日文名稱</div><div class="value">ベビーブック 2026年8・9月号</div></div>
+            <div><div class="label">中文名稱</div><div class="value">Baby Book 2026 年 8・9 月號</div></div>
+            <div><div class="label">出版社</div><div class="value">小學館</div></div>
+            <div><div class="label">適合年齡</div><div class="value">1・2・3 歲</div></div>
+            <div><div class="label">發售日期</div><div class="value">2026 年 6 月 26 日左右</div></div>
+            <div><div class="label">售價（含附錄）</div><div class="value">1,590 日圓（税込）</div></div>
+          </div>
+        </div>
+      </div>
+
+      <section>
+        <div class="grid">
+          <div class="box highlight">
+            <h2>🎁 本期豪華附錄</h2>
+            <p><strong>麵包超人 發光語音驗票機</strong></p>
+            <p class="small">日文名稱：アンパンマン タッチでひかる！おしゃべりかいさつき</p>
+            <p>依官方介紹，孩子可以將附錄卡片靠近驗票機，體驗類似日本車站刷卡進站的遊戲情境。附錄也搭配麵包超人列車、角色配件與外出主題海報一起遊玩。</p>
+          </div>
+
+          <div class="box">
+            <h2>✨ 本期有哪些特色？</h2>
+            <ul class="feature-list">
+              <li>卡片感應玩法</li>
+              <li>發光效果</li>
+              <li>語音播放</li>
+              <li>列車情境遊戲</li>
+              <li>外出主題海報</li>
+              <li>麵包超人角色配件</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h2>🎮 怎麼玩？</h2>
+            <ol class="steps">
+              <li>將附錄卡片靠近驗票機。</li>
+              <li>驗票機會亮燈，並播放語音。</li>
+              <li>官方介紹顯示，語音包含「驗票機開啟」與「請再感應一次」兩種類型，會隨機播放。</li>
+              <li>可搭配麵包超人列車、角色配件與外出主題海報，進行情境遊戲。</li>
+            </ol>
+          </div>
+
+          <div class="box soft">
+            <h2>📦 商品內容</h2>
+            <ul>
+              <li>發光語音驗票機</li>
+              <li>感應卡玩法配件</li>
+              <li>麵包超人列車與角色配件</li>
+              <li>外出主題遊戲海報</li>
+              <li>雜誌本體</li>
+            </ul>
+            <p class="small">※ 材質細節官方未公開標示，因此本頁不自行推測。</p>
+          </div>
+
+          <div class="box">
+            <h2>📚 雜誌收錄內容</h2>
+            <ul>
+              <li>麵包超人夏季生活教育海報</li>
+              <li>麵包超人 6 頁機關遊戲「食物店遊戲」</li>
+              <li>《いないいないばあっ！》水族館貼紙遊戲</li>
+              <li>《おかあさんといっしょ》歌曲主題內容</li>
+              <li>身體遊戲等幼兒活動內容</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h2>👶 適合什麼樣的孩子？</h2>
+            <ul>
+              <li>1～3 歲幼兒。</li>
+              <li>喜歡麵包超人角色的孩子。</li>
+              <li>對電車、車站、刷卡進站情境有興趣的孩子。</li>
+              <li>喜歡可操作、可互動附錄的孩子。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="box">
+          <h2>🎥 官方示範影片</h2>
+          <p>下方影片為官方示範影片，可觀看本期附錄的實際操作方式。</p>
+          <div class="video">
+            <iframe src="https://www.youtube.com/embed/7Sg-8S8XBwI" title="Baby Book 2026年8・9月號 官方示範影片" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+      <div class="sources">
+        <strong>資料來源</strong><br>
+        小學館官方介紹頁：
+        <a href="https://sho.jp/bb/85992" target="_blank" rel="noopener">《ベビーブック 2026年8・9月号》官方介紹</a><br>
+        官方示範影片：
+        <a href="https://www.youtube.com/watch?v=7Sg-8S8XBwI" target="_blank" rel="noopener">YouTube 官方影片</a>
+        <div class="print-note">本頁文字依出版社官方資料與官方影片整理；官方未提供的內容不自行補充。</div>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
