@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>《めばえ》2026年8月號｜附阿囉哈襯衫麵包超人玩偶與海邊小屋</title>
-  <meta name="description" content="日本親子選物誌介紹《めばえ》2026年8月號，附錄為アロハシャツアンパンマンドール與うみべのおうち，適合親子一起進入夏天海邊遊戲情境。" />
+  <title>めばえ (8月/2026/附阿囉哈襯衫麵包超人玩偶與海邊小屋)</title>
+  <meta name="description" content="日本親子選物誌介紹《めばえ》2026年8月號，附錄為阿囉哈襯衫麵包超人玩偶與海邊小屋，並整理本誌 Paw Patrol、Gabby’s Dollhouse、麵包超人飯糰店、Hello Kitty 花火大會、蠟筆小新抓蟲遊戲等內容。" />
   <style>
     :root {
       --bg: #fbf7f0;
       --paper: #fffdf8;
       --ink: #3f342b;
       --muted: #7d6f63;
-      --accent: #d69b69;
-      --accent2: #7fb7b1;
+      --accent: #d99662;
+      --accent2: #69aeb0;
       --line: #eadfd0;
-      --soft: #f4eadc;
+      --soft: #f7efe4;
+      --blue: #eaf8f8;
     }
     * { box-sizing: border-box; }
     body {
@@ -26,7 +27,7 @@
       letter-spacing: .02em;
     }
     .wrap {
-      width: min(980px, calc(100% - 36px));
+      width: min(1040px, calc(100% - 36px));
       margin: 0 auto;
       padding: 34px 0 56px;
     }
@@ -38,10 +39,14 @@
       margin-bottom: 18px;
     }
     .hero {
+      display: grid;
+      grid-template-columns: .92fr 1.08fr;
+      gap: 30px;
+      align-items: center;
       background: var(--paper);
       border: 1px solid var(--line);
-      border-radius: 28px;
-      padding: clamp(28px, 5vw, 54px);
+      border-radius: 30px;
+      padding: clamp(24px, 4.8vw, 52px);
       box-shadow: 0 20px 50px rgba(120, 86, 50, .08);
       position: relative;
       overflow: hidden;
@@ -49,12 +54,22 @@
     .hero:after {
       content: "";
       position: absolute;
-      right: -80px;
-      top: -80px;
-      width: 240px;
-      height: 240px;
+      right: -90px;
+      top: -90px;
+      width: 250px;
+      height: 250px;
       border-radius: 50%;
-      background: rgba(127,183,177,.18);
+      background: rgba(105,174,176,.18);
+    }
+    .hero-img, .photo-card img, .feature img {
+      width: 100%;
+      display: block;
+      border-radius: 20px;
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+    .hero-img {
+      box-shadow: 0 14px 34px rgba(72, 54, 38, .12);
     }
     .eyebrow {
       display: inline-flex;
@@ -66,49 +81,52 @@
       padding: 7px 14px;
       border-radius: 999px;
       font-size: 14px;
-      font-weight: 700;
+      font-weight: 800;
       margin-bottom: 18px;
     }
     h1 {
       margin: 0;
-      font-size: clamp(30px, 6vw, 54px);
+      font-size: clamp(30px, 5.4vw, 54px);
       line-height: 1.16;
       letter-spacing: .01em;
     }
     .subtitle {
       margin-top: 12px;
-      font-size: clamp(20px, 4vw, 32px);
+      font-size: clamp(20px, 3.5vw, 30px);
       color: #876044;
       font-weight: 800;
       line-height: 1.35;
     }
     .lead {
-      margin: 26px 0 0;
+      margin: 24px 0 0;
       max-width: 760px;
       color: var(--muted);
       font-size: 17px;
     }
-    .grid {
+    .meta {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      margin-top: 28px;
+      gap: 12px;
+      margin-top: 24px;
     }
-    .card, section {
+    .meta div {
+      background: #fff7ed;
+      border: 1px solid #efdcc5;
+      border-radius: 16px;
+      padding: 12px 14px;
+      font-size: 14px;
+      color: #795940;
+      font-weight: 800;
+      text-align: center;
+    }
+    section {
       background: var(--paper);
       border: 1px solid var(--line);
-      border-radius: 22px;
-      padding: 24px;
+      border-radius: 24px;
+      padding: clamp(22px, 4vw, 34px);
+      margin-top: 22px;
       box-shadow: 0 12px 30px rgba(120, 86, 50, .055);
     }
-    .card b {
-      display: block;
-      color: #7b573d;
-      margin-bottom: 8px;
-      font-size: 16px;
-    }
-    .card p { margin: 0; color: var(--muted); font-size: 15px; }
-    section { margin-top: 22px; }
     h2 {
       margin: 0 0 14px;
       font-size: 25px;
@@ -121,11 +139,7 @@
       font-size: 19px;
     }
     p { margin: 0 0 14px; }
-    ul {
-      padding-left: 1.2em;
-      margin: 10px 0 0;
-    }
-    li { margin: 6px 0; }
+    .muted { color: var(--muted); }
     .pillbox {
       display: flex;
       flex-wrap: wrap;
@@ -133,13 +147,46 @@
       margin-top: 14px;
     }
     .pill {
-      background: #f7efe4;
+      background: var(--soft);
       border: 1px solid #ead9c3;
       color: #7a5b42;
       border-radius: 999px;
       padding: 7px 12px;
       font-size: 14px;
-      font-weight: 700;
+      font-weight: 800;
+    }
+    .photo-card {
+      margin-top: 18px;
+      background: #fffaf4;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 14px;
+    }
+    .caption {
+      margin: 10px 4px 0;
+      color: #8c7a68;
+      font-size: 13px;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 18px;
+    }
+    .feature {
+      background: #fffaf4;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 14px;
+    }
+    .feature h3 {
+      margin: 14px 4px 8px;
+      font-size: 18px;
+    }
+    .feature p {
+      margin: 0 4px 8px;
+      color: var(--muted);
+      font-size: 15px;
     }
     .video {
       position: relative;
@@ -174,8 +221,15 @@
       font-weight: 800;
     }
     .note {
-      background: #f7fbfa;
+      background: var(--blue);
       border-color: #d7ebe8;
+    }
+    .source {
+      font-size: 12px;
+      color: #9a8a7b;
+      margin-top: 20px;
+      border-top: 1px solid var(--line);
+      padding-top: 14px;
     }
     .footer {
       margin-top: 34px;
@@ -183,12 +237,13 @@
       color: #9a8a7b;
       font-size: 13px;
     }
-    @media (max-width: 760px) {
-      .grid { grid-template-columns: 1fr; }
+    a { color: #8a5c3c; }
+    @media (max-width: 820px) {
+      .hero { grid-template-columns: 1fr; }
+      .meta, .features { grid-template-columns: 1fr; }
       .info { grid-template-columns: 1fr; gap: 0; }
       .info .label { padding-bottom: 0; border-bottom: 0; }
       .info div:not(.label) { padding-top: 2px; }
-      .hero, section { border-radius: 22px; }
     }
   </style>
 </head>
@@ -197,27 +252,21 @@
     <div class="brand">日本親子選物誌</div>
 
     <article class="hero">
-      <div class="eyebrow">めばえ 2026年8月号</div>
-      <h1>めばえ 2026年8月号</h1>
-      <div class="subtitle">《めばえ》2026年8月號｜附阿囉哈襯衫麵包超人玩偶與海邊小屋</div>
-      <p class="lead">
-        這期《めばえ》把夏天的海邊氣氛帶進孩子的遊戲時間。主附錄「アロハシャツアンパンマンドール」
-        是穿上夏日阿囉哈襯衫的麵包超人玩偶，搭配「うみべのおうち」海邊小屋，讓孩子可以一邊擺放角色、
-        一邊展開屬於夏天的情境扮演。
-      </p>
-
-      <div class="grid">
-        <div class="card">
-          <b>本期主題</b>
-          <p>夏天、海邊、換裝與小屋遊戲，適合喜歡角色扮演的孩子。</p>
-        </div>
-        <div class="card">
-          <b>附錄亮點</b>
-          <p>麵包超人玩偶穿著阿囉哈襯衫，視覺感可愛，也很有季節感。</p>
-        </div>
-        <div class="card">
-          <b>親子共玩</b>
-          <p>透過海邊小屋場景，孩子可以練習說故事、安排角色與模擬日常對話。</p>
+      <div>
+        <img class="hero-img" src="https://sho.jp/wp-content/uploads/2026/06/mebae_2608_hyo4.jpg" alt="めばえ 2026年8月号 封面" />
+      </div>
+      <div>
+        <div class="eyebrow">小學館幼兒學習繪本｜3・4歲</div>
+        <h1>めばえ 2026年8月号</h1>
+        <div class="subtitle">《めばえ》2026年8月號｜附阿囉哈襯衫麵包超人玩偶與海邊小屋</div>
+        <p class="lead">
+          這期《めばえ》以夏天的海邊遊戲為核心。主附錄是《めばえ》原創設計的「アロハシャツアンパンマンドール」
+          與「うみべのおうち」：穿著阿囉哈襯衫的麵包超人，可以坐進海邊小屋，也能搭配小屋裡的溜滑梯與場景一起玩。
+        </p>
+        <div class="meta">
+          <div>發售日：2026年6月26日左右</div>
+          <div>對象年齡：3・4歲</div>
+          <div>主題：夏天 × 海邊 × 角色遊戲</div>
         </div>
       </div>
     </article>
@@ -225,71 +274,136 @@
     <section>
       <h2>本期看點</h2>
       <p>
-        《めばえ》是日本幼兒雜誌中很受親子歡迎的系列，特色是把孩子熟悉的角色、貼紙、紙作與遊戲附錄結合在一起。
-        2026年8月號以夏日海邊為主軸，附錄不是單純觀賞型小物，而是可以拿在手上移動、擺放、進行情境互動的遊戲組。
+        《めばえ》8月號很適合喜歡麵包超人與情境扮演的孩子。這期附錄不只是單一玩偶，而是把「角色」與「場景」一起做出來：
+        麵包超人換上夏天感十足的阿囉哈襯衫，海邊小屋則提供可以進出、坐下、滑下來的遊戲舞台。
       </p>
       <p>
-        對學齡前孩子來說，這類附錄最有趣的地方，是它提供了一個清楚的「故事入口」：麵包超人穿著夏天衣服、來到海邊小屋，
-        接下來可以吃點心、休息、找朋友、去海邊玩，也可以讓孩子自己安排新的劇情。
+        對學齡前孩子來說，這類附錄的好處是遊戲規則很直覺。孩子不需要大量文字說明，就能透過擺放、移動、假裝對話，
+        自然進入「今天麵包超人在海邊做什麼？」的故事世界。
       </p>
       <div class="pillbox">
-        <span class="pill">夏日海邊主題</span>
-        <span class="pill">麵包超人角色</span>
-        <span class="pill">情境扮演</span>
-        <span class="pill">親子互動</span>
+        <span class="pill">麵包超人附錄</span>
+        <span class="pill">海邊小屋</span>
+        <span class="pill">阿囉哈襯衫造型</span>
+        <span class="pill">3・4歲親子共玩</span>
       </div>
     </section>
 
     <section>
       <h2>附錄介紹</h2>
-      <h3>アロハシャツアンパンマンドール</h3>
+      <div class="photo-card">
+        <img src="https://sho.jp/wp-content/uploads/2026/06/mabae_2608__f001.jpg" alt="阿囉哈襯衫麵包超人玩偶與海邊小屋附錄介紹" />
+        <p class="caption">圖片來源：小學館《めばえ》官方介紹頁。</p>
+      </div>
+
+      <h3>アロハシャツアンパンマンドール｜阿囉哈襯衫麵包超人玩偶</h3>
       <p>
-        「アロハシャツアンパンマンドール」可翻成「阿囉哈襯衫麵包超人玩偶」。麵包超人換上充滿夏天氣息的阿囉哈襯衫，
-        比平常更有度假感，也很適合搭配海邊場景一起玩。
+        這個麵包超人玩偶穿著藍色阿囉哈襯衫，是《めばえ》本期的原創設計。比起一般造型，這個版本更有夏天度假感，
+        很適合搭配海邊小屋、船、吊床、溜滑梯等場景一起玩。
       </p>
-      <h3>うみべのおうち</h3>
+
+      <h3>うみべのおうち｜海邊小屋</h3>
       <p>
-        「うみべのおうち」是「海邊的小屋」。小屋讓玩偶不只是單一角色，而是有了可以進出的場景。
-        孩子可以把麵包超人放進屋裡、安排休息或拜訪朋友，也可以把小屋當作海邊故事的舞台。
-      </p>
-      <p>
-        玩偶加上小屋，會比單一紙卡更容易引發孩子的想像：誰住在小屋裡？今天要去海邊做什麼？
-        麵包超人會遇到誰？這些簡單提問，都能自然延伸成親子共玩的對話。
+        海邊小屋是這期遊戲感最完整的地方。孩子可以讓麵包超人坐在小屋裡、在吊床上休息、從溜滑梯滑下來，
+        或安排其他角色一起到海邊拜訪。這種「有角色、有空間、有動作」的附錄，很容易延伸成親子故事遊戲。
       </p>
     </section>
 
     <section>
+      <h2>本誌內容中文介紹</h2>
+      <p class="muted">
+        除了主附錄，本期內頁也收錄多個孩子熟悉的角色遊戲與活動頁，包含電影介紹、貼紙遊戲、紙作操作、塗色與抓蟲遊戲。
+      </p>
+
+      <div class="features">
+        <div class="feature">
+          <img src="https://sho.jp/wp-content/uploads/2026/06/mebae_2608_02.jpg" alt="Paw Patrol 電影頁面" />
+          <h3>えいが パウ・パトロール ザ・ダイノ・ムービー はじまるよ!!</h3>
+          <p>
+            Paw Patrol 來到神祕的「恐龍島」展開冒險。本期介紹電影中登場的夥伴，也安排迷宮遊戲，讓孩子邊看角色邊遊戲。
+          </p>
+        </div>
+
+        <div class="feature">
+          <img src="https://sho.jp/wp-content/uploads/2026/06/mebae_2608_05.jpg" alt="Gabby’s Dollhouse 海洋派對頁面" />
+          <h3>ギャビーのドールハウス うみのせかいでマーキャットとパーティー！</h3>
+          <p>
+            Gabby 與 Pandy 搭船前往海洋世界，參加 MerCat 的派對。孩子可以一邊貼貼紙，一邊跟著頁面情節遊玩。
+          </p>
+        </div>
+
+        <div class="feature">
+          <img src="https://sho.jp/wp-content/uploads/2026/06/mebae_2608_03.jpg" alt="麵包超人飯糰店頁面" />
+          <h3>アンパンマン おにぎりやさん</h3>
+          <p>
+            這個單元讓孩子把喜歡的配料放進飯裡，再用海苔包起來做成飯糰，也可以做成蛋包飯飯糰，完成後端給 Dokin-chan 與 Kokin-chan。
+          </p>
+        </div>
+
+        <div class="feature">
+          <img src="https://sho.jp/wp-content/uploads/2026/06/mebae_2608_06.jpg" alt="Hello Kitty 花火大會頁面" />
+          <h3>ハローキティ きらきら はなびたいかい</h3>
+          <p>
+            Hello Kitty 和朋友們來到花火大會。孩子可以畫出漂亮煙火，也能替 Kitty 與 Mimmy 的浴衣塗色，充滿夏季祭典氣氛。
+          </p>
+        </div>
+
+        <div class="feature">
+          <img src="https://sho.jp/wp-content/uploads/2026/06/mebae_2608_04.jpg" alt="蠟筆小新抓蟲遊戲頁面" />
+          <h3>クレヨンしんちゃん むしとりあそび</h3>
+          <p>
+            和小新一起挑戰抓蟲。用捕蟲網蓋住獨角仙、蝴蝶等昆蟲，再把蟲放進蟲籠裡，適合喜歡操作型遊戲的孩子。
+          </p>
+        </div>
+
+        <div class="feature">
+          <h3>親子共玩方向</h3>
+          <p>
+            本期內容從海邊、恐龍島、派對、飯糰店、花火大會到抓蟲，都是孩子容易理解的生活與想像情境。
+            大人可以用「今天要去哪裡？」、「要做什麼給朋友吃？」、「你抓到什麼蟲？」這類簡單提問，陪孩子把頁面變成小故事。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
       <h2>怎麼玩？</h2>
-      <ul>
-        <li><strong>角色扮演：</strong>讓孩子拿著麵包超人玩偶，安排他進出海邊小屋。</li>
-        <li><strong>情境對話：</strong>大人可以問「麵包超人今天要去哪裡？」、「他要邀請誰一起玩？」</li>
-        <li><strong>夏天認知：</strong>搭配海邊、衣服、房子、朋友等詞彙，建立生活情境連結。</li>
-        <li><strong>故事接龍：</strong>由大人開頭一句，孩子接著說下一句，慢慢形成小故事。</li>
-      </ul>
+      <h3>1. 從海邊小屋開始說故事</h3>
+      <p>
+        先讓孩子把麵包超人放進小屋，再問：「他今天住在海邊嗎？」「他想先睡吊床，還是先玩溜滑梯？」
+        用非常簡單的問題，就能引導孩子說出動作與情節。
+      </p>
+      <h3>2. 把本誌內頁接成一天的行程</h3>
+      <p>
+        可以把本期不同單元想成麵包超人的夏日行程：早上去海邊小屋，中午做飯糰，下午去恐龍島或海洋派對，
+        晚上看花火大會。孩子會更容易把多個頁面連成完整故事。
+      </p>
+      <h3>3. 用貼紙與紙作練習小手操作</h3>
+      <p>
+        飯糰店、Gabby 海洋派對、抓蟲遊戲都帶有操作性，適合讓孩子練習貼、放、包、移動、分類等小動作。
+      </p>
     </section>
 
     <section>
       <h2>影片介紹</h2>
       <p>
-        下面可觀看本期附錄介紹影片，實際確認玩偶與海邊小屋的呈現方式。
+        可觀看本期附錄介紹影片，確認阿囉哈襯衫麵包超人玩偶與海邊小屋的實際玩法。
       </p>
       <div class="video">
         <iframe src="https://www.youtube.com/embed/DQhheEwCmfc?start=4" title="めばえ 2026年8月号 付録紹介影片" allowfullscreen></iframe>
       </div>
-      <p style="margin-top:12px;font-size:14px;color:var(--muted);">
-        影片連結：https://www.youtube.com/watch?v=DQhheEwCmfc&amp;t=4s
-      </p>
+      <p class="caption">影片連結：https://www.youtube.com/watch?v=DQhheEwCmfc&amp;t=4s</p>
     </section>
 
     <section class="note">
       <h2>日本親子選物誌觀點</h2>
       <p>
-        這期的魅力在於「季節感」與「可玩性」都很清楚。麵包超人本身對幼兒有高度熟悉感，
-        阿囉哈襯衫則把角色帶進夏天情境；海邊小屋則讓孩子有一個能進行故事遊戲的小舞台。
+        這期《めばえ》很明確地把「夏天」做成孩子拿得到、玩得懂的場景。阿囉哈襯衫麵包超人本身有收藏與新鮮感，
+        海邊小屋則補足了故事舞台，因此整體比單一貼紙頁更容易反覆遊玩。
       </p>
       <p>
-        如果孩子喜歡麵包超人、喜歡娃娃屋或角色扮演，這期會比單純貼紙或紙作更容易反覆拿出來玩。
-        親子共玩時，不需要複雜規則，只要用「今天在海邊發生什麼事？」作為開頭，就能自然引導孩子說出自己的小故事。
+        對 3・4 歲孩子來說，最有價值的不是附錄有多複雜，而是能不能快速進入角色扮演。本期從海邊小屋到飯糰店、
+        花火大會與抓蟲遊戲，都具備很清楚的「生活情境」，親子共玩時不需要照著說明書一步一步完成，也能自然展開對話。
       </p>
     </section>
 
@@ -298,10 +412,17 @@
       <div class="info">
         <div class="label">日文書名</div><div>めばえ 2026年8月号</div>
         <div class="label">中文參考名</div><div>《めばえ》2026年8月號｜附阿囉哈襯衫麵包超人玩偶與海邊小屋</div>
+        <div class="label">出版社</div><div>小學館</div>
+        <div class="label">發售日</div><div>2026年6月26日左右</div>
+        <div class="label">對象年齡</div><div>3・4歲</div>
         <div class="label">主要附錄</div><div>アロハシャツアンパンマンドール、うみべのおうち</div>
         <div class="label">附錄中文</div><div>阿囉哈襯衫麵包超人玩偶、海邊小屋</div>
-        <div class="label">適合對象</div><div>喜歡麵包超人、角色扮演、娃娃屋情境與親子共玩的學齡前孩子</div>
+        <div class="label">本誌內容</div><div>Paw Patrol 電影、Gabby’s Dollhouse 海洋派對、麵包超人飯糰店、Hello Kitty 花火大會、蠟筆小新抓蟲遊戲</div>
       </div>
+      <p class="source">
+        圖片與資料來源：小學館《めばえ》官方介紹頁。圖片、角色與商標權利歸原權利人所有，本頁為中文整理與親子共玩介紹。
+        原始頁面：<a href="https://sho.jp/mebae/86008" target="_blank" rel="noopener">sho.jp/mebae/86008</a>
+      </p>
     </section>
 
     <div class="footer">
