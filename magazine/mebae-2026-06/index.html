@@ -1,1 +1,474 @@
-index
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>めばえ (6月/2026/附麵包超人現烤麵包餐車)</title>
+  <meta name="description" content="日本親子選物誌介紹《めばえ》2026年6月號，附錄為アンパンマン やきたて！パンやさんワゴン，並整理 Paw Patrol、Hello Kitty、麵包超人新幹線、Thomas、蠟筆小新刷牙遊戲等本誌內容。" />
+  <style>
+    :root {
+      --bg: #fbf7f0;
+      --paper: #fffdf8;
+      --ink: #3f342b;
+      --muted: #7d6f63;
+      --accent: #d99662;
+      --accent2: #69aeb0;
+      --line: #eadfd0;
+      --soft: #f7efe4;
+      --blue: #eaf8f8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, var(--bg), #fffaf3);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      line-height: 1.85;
+      letter-spacing: .02em;
+    }
+    .wrap {
+      width: min(1040px, calc(100% - 36px));
+      margin: 0 auto;
+      padding: 34px 0 56px;
+    }
+    .brand {
+      font-weight: 800;
+      letter-spacing: .08em;
+      color: #9c6b45;
+      font-size: 20px;
+      margin-bottom: 18px;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: .92fr 1.08fr;
+      gap: 30px;
+      align-items: center;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      padding: clamp(24px, 4.8vw, 52px);
+      box-shadow: 0 20px 50px rgba(120, 86, 50, .08);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero:after {
+      content: "";
+      position: absolute;
+      right: -90px;
+      top: -90px;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      background: rgba(105,174,176,.18);
+    }
+    .hero-img, .photo-card img, .feature img {
+      width: 100%;
+      display: block;
+      border-radius: 20px;
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+    .hero-img {
+      box-shadow: 0 14px 34px rgba(72, 54, 38, .12);
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #8d5f3f;
+      background: #fff3e3;
+      border: 1px solid #f1d9bd;
+      padding: 7px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 5.4vw, 54px);
+      line-height: 1.16;
+      letter-spacing: .01em;
+    }
+    .subtitle {
+      margin-top: 12px;
+      font-size: clamp(20px, 3.5vw, 30px);
+      color: #876044;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+    .lead {
+      margin: 24px 0 0;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 24px;
+    }
+    .meta div {
+      background: #fff7ed;
+      border: 1px solid #efdcc5;
+      border-radius: 16px;
+      padding: 12px 14px;
+      font-size: 14px;
+      color: #795940;
+      font-weight: 800;
+      text-align: center;
+    }
+    section {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: clamp(22px, 4vw, 34px);
+      margin-top: 22px;
+      box-shadow: 0 12px 30px rgba(120, 86, 50, .055);
+    }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 25px;
+      color: #6f4f38;
+      line-height: 1.3;
+    }
+    h3 {
+      margin: 18px 0 8px;
+      color: #6f4f38;
+      font-size: 19px;
+    }
+    p { margin: 0 0 14px; }
+    .muted { color: var(--muted); }
+    .pillbox {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .pill {
+      background: var(--soft);
+      border: 1px solid #ead9c3;
+      color: #7a5b42;
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-size: 14px;
+      font-weight: 800;
+    }
+    .photo-card {
+      margin-top: 18px;
+      background: #fffaf4;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 14px;
+    }
+    .caption {
+      margin: 10px 4px 0;
+      color: #8c7a68;
+      font-size: 13px;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 18px;
+    }
+    .feature {
+      background: #fffaf4;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 14px;
+    }
+    .feature h3 {
+      margin: 14px 4px 8px;
+      font-size: 18px;
+    }
+    .feature p {
+      margin: 0 4px 8px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .video {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      border-radius: 18px;
+      overflow: hidden;
+      background: #efe5d8;
+      border: 1px solid var(--line);
+      margin-top: 16px;
+    }
+    iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .info {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 10px 18px;
+      margin-top: 12px;
+      font-size: 15px;
+    }
+    .info div {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .info .label {
+      color: #8a6d55;
+      font-weight: 800;
+    }
+    .note {
+      background: var(--blue);
+      border-color: #d7ebe8;
+    }
+    .source {
+      font-size: 12px;
+      color: #9a8a7b;
+      margin-top: 20px;
+      border-top: 1px solid var(--line);
+      padding-top: 14px;
+    }
+    .footer {
+      margin-top: 34px;
+      text-align: center;
+      color: #9a8a7b;
+      font-size: 13px;
+    }
+    a { color: #8a5c3c; }
+    @media (max-width: 820px) {
+      .hero { grid-template-columns: 1fr; }
+      .meta, .features { grid-template-columns: 1fr; }
+      .info { grid-template-columns: 1fr; gap: 0; }
+      .info .label { padding-bottom: 0; border-bottom: 0; }
+      .info div:not(.label) { padding-top: 2px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="brand">日本親子選物誌</div>
+
+    <article class="hero">
+      <div>
+        <img class="hero-img" src="https://sho.jp/wp-content/uploads/2026/04/mebae_2606_hyo.jpg" alt="めばえ 2026年6月号 封面" />
+      </div>
+      <div>
+        <div class="eyebrow">小學館幼兒學習繪本｜3・4歲</div>
+        <h1>めばえ 2026年6月号</h1>
+        <div class="subtitle">《めばえ》2026年6月號｜附麵包超人現烤麵包餐車</div>
+        <p class="lead">
+          這期《めばえ》把孩子最容易投入的「麵包店遊戲」做成可以反覆操作的附錄。
+          主附錄「アンパンマン やきたて！ パンやさんワゴン」有麵包餐車、烤爐、夾子與紙袋，
+          還附一個塑膠製的特別版「草莓麵包超人麵包」。孩子可以把麵包放進烤爐，打開門後取出現烤麵包，
+          再用夾子裝進紙袋，完成一場可愛的麵包店扮演遊戲。
+        </p>
+        <div class="meta">
+          <div>發售日：2026年4月24日左右</div>
+          <div>對象年齡：3・4歲</div>
+          <div>主題：麵包店 × 餐車 × 角色扮演</div>
+        </div>
+      </div>
+    </article>
+
+    <section>
+      <h2>本期看點</h2>
+      <p>
+        《めばえ》6月號的核心魅力，是把「買麵包、烤麵包、裝袋、交給客人」這一連串日常流程，
+        做成孩子看得懂、手也能跟著操作的遊戲附錄。對 3・4 歲孩子來說，麵包店是很容易理解的生活場景，
+        加上麵包超人角色本身就和「麵包」高度連結，因此主題完整度很高。
+      </p>
+      <p>
+        這期不只是紙面閱讀，而是能讓孩子實際開門、拿取、夾麵包、放進紙袋。這些動作會讓孩子自然進入
+        「歡迎光臨」、「請問要哪一個麵包？」、「我幫你裝袋」的對話情境，很適合親子一起玩。
+      </p>
+      <div class="pillbox">
+        <span class="pill">麵包超人附錄</span>
+        <span class="pill">麵包店角色扮演</span>
+        <span class="pill">餐車＋烤爐玩法</span>
+        <span class="pill">3・4歲親子共玩</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>附錄介紹</h2>
+      <div class="photo-card">
+        <img src="https://sho.jp/wp-content/uploads/2026/04/mebae_2606_furoku_bn.jpg" alt="麵包超人現烤麵包餐車附錄介紹" />
+        <p class="caption">圖片來源：小學館《めばえ》官方介紹頁。</p>
+      </div>
+
+      <h3>アンパンマン やきたて！ パンやさんワゴン｜麵包超人現烤麵包餐車</h3>
+      <p>
+        這組附錄的重點是「餐車」與「烤爐」結合。孩子可以把麵包放進烤爐的窯中，
+        打開門時就像剛烤好一樣，取出麵包後再用夾子夾起來，放進紙袋裡。
+      </p>
+      <p>
+        官方介紹中提到，本期附有塑膠製、較耐玩的「いちごアンパンマンパン」，也就是草莓麵包超人麵包。
+        這個特別麵包讓孩子在紙作餐車之外，多一個可以拿取與反覆玩的實體小物。
+      </p>
+
+      <h3>為什麼這種附錄適合學齡前孩子？</h3>
+      <p>
+        麵包店遊戲的流程很清楚，孩子容易理解「選麵包、烤麵包、夾麵包、裝袋、交給客人」。
+        這類有順序的扮演遊戲，可以讓孩子自然練習生活語言、輪流等待、選擇與簡單分類。
+      </p>
+    </section>
+
+    <section>
+      <h2>本誌內容中文介紹</h2>
+      <p class="muted">
+        除了主附錄，本期也收錄多個孩子熟悉的角色單元，包含 Paw Patrol、Hello Kitty、麵包超人新幹線、
+        Thomas 與蠟筆小新。每個單元都不是單純閱讀，而是加入貼紙、翻頁、紙作、找一找與操作型遊戲。
+      </p>
+
+      <div class="features">
+        <div class="feature">
+          <img src="https://sho.jp/wp-content/uploads/2026/04/mebae_2606_04.jpg" alt="Paw Patrol Skye 的禮物大作戰頁面" />
+          <h3>パウ・パトロール スカイの プレゼントだいさくせん♪</h3>
+          <p>
+            Skye 準備了禮物，要送給新朋友 Coral。孩子可以一邊讀故事，一邊貼貼紙，
+            跟著 Paw Patrol 的大家一起把禮物送到 Coral 身邊。
+          </p>
+        </div>
+
+        <div class="feature">
+          <img src="https://sho.jp/wp-content/uploads/2026/04/mebae_2606_05n.jpg" alt="Hello Kitty 做便當頁面" />
+          <h3>ハローキティ おべんとう つくりましょ</h3>
+          <p>
+            Kitty 與 Mimmy 正在準備野餐便當。孩子可以把配菜貼紙貼進便當盒，
+            完成看起來很好吃的便當，適合搭配「今天想放什麼菜？」的親子對話。
+          </p>
+        </div>
+
+        <div class="feature">
+          <img src="https://sho.jp/wp-content/uploads/2026/04/mebae_2606_02.jpg" alt="麵包超人搭新幹線出門頁面" />
+          <h3>アンパンマン しんかんせんで おでかけ</h3>
+          <p>
+            麵包超人和朋友們搭上新幹線出門。孩子可以把人形放進新幹線，讓列車沿著路線前進，
+            翻頁穿過隧道後，就會抵達花田車站。
+          </p>
+        </div>
+
+        <div class="feature">
+          <img src="https://sho.jp/wp-content/uploads/2026/04/mebae_2606_03.jpg" alt="麵包超人新幹線抵達花田車站頁面" />
+          <h3>穿過隧道，抵達花田車站</h3>
+          <p>
+            這個單元把「搭車、通過隧道、抵達目的地」做成連續場景。孩子可以安排角色買便當、
+            買伴手禮、去野餐，把交通工具遊戲延伸成完整的一日外出故事。
+          </p>
+        </div>
+
+        <div class="feature">
+          <img src="https://sho.jp/wp-content/uploads/2026/04/mebae_2606_06.jpg" alt="Thomas 你好 Percy 頁面" />
+          <h3>きかんしゃトーマス こんにちは パーシー</h3>
+          <p>
+            這個單元介紹 Thomas 的朋友 Percy。孩子可以把信件送到不同夥伴身邊，
+            用貼紙遊戲理解「送信」、「朋友」、「目的地」等簡單情境。
+          </p>
+        </div>
+
+        <div class="feature">
+          <img src="https://sho.jp/wp-content/uploads/2026/04/mebae_2606_07.jpg" alt="蠟筆小新刷牙遊戲頁面" />
+          <h3>クレヨンしんちゃん はみがきシュッ！シュッ！</h3>
+          <p>
+            小新的牙齒沾滿髒污，孩子可以使用牙刷道具幫他刷乾淨。頁面提醒要刷到牙齒內側與表面，
+            是很適合連結日常刷牙習慣的操作遊戲。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>怎麼玩？</h2>
+      <h3>1. 先從「歡迎光臨」開始</h3>
+      <p>
+        大人可以扮演客人，孩子扮演麵包店老闆。從「歡迎光臨」、「請問要哪一個麵包？」
+        到「我幫你裝進紙袋」，讓孩子自然練習生活對話。
+      </p>
+      <h3>2. 把麵包分類與點餐結合</h3>
+      <p>
+        可以請孩子依照角色、顏色或喜歡程度來分類麵包，也可以讓大人指定「我要草莓麵包超人麵包」，
+        讓孩子尋找、夾取並交給客人。
+      </p>
+      <h3>3. 把本誌單元串成一天行程</h3>
+      <p>
+        早上開麵包餐車，中午做 Hello Kitty 便當，下午搭新幹線去花田車站，晚上幫小新刷牙。
+        這樣能讓孩子把不同單元連成自己的生活故事。
+      </p>
+    </section>
+
+    <section>
+      <h2>適合什麼孩子？</h2>
+      <p>
+        這期特別適合喜歡麵包超人、喜歡辦家家酒、喜歡開店遊戲與餐車遊戲的孩子。
+        如果孩子平常會模仿店員、喜歡用夾子夾東西、喜歡把物品裝進袋子或盒子裡，
+        這期的附錄會很容易上手。
+      </p>
+      <p>
+        對於正在練習語言表達的 3・4 歲孩子，麵包店情境也很適合引導短句：
+        「我要這個」、「請等一下」、「烤好了」、「謝謝」。
+      </p>
+    </section>
+
+    <section>
+      <h2>值得收藏嗎？</h2>
+      <p>
+        這期的收藏價值在於主題完整、角色連結強、玩法直覺。麵包超人本身就是由麵包延伸而來的角色，
+        搭配「現烤麵包餐車」非常自然，不會有主題跳躍感。
+      </p>
+      <p>
+        如果只收藏少數幾期《めばえ》，這種「店家扮演」類附錄通常比單次操作型紙作更容易反覆拿出來玩。
+        但因為仍包含紙作餐車與配件，保存時建議另外用夾鏈袋收納麵包、夾子與小紙袋，避免遺失。
+      </p>
+    </section>
+
+    <section>
+      <h2>影片介紹</h2>
+      <p>
+        可觀看本期附錄介紹影片，確認「麵包超人現烤麵包餐車」的實際組裝與遊戲方式。
+      </p>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/58i23kdr7Gg" title="めばえ 2026年6月号 付録紹介影片" allowfullscreen></iframe>
+      </div>
+      <p class="caption">影片連結：https://www.youtube.com/watch?v=58i23kdr7Gg</p>
+    </section>
+
+    <section class="note">
+      <h2>日本親子選物誌觀點</h2>
+      <p>
+        這期《めばえ》最好的地方，是它把孩子熟悉的「麵包店」做成一個可以完整扮演的流程。
+        不是只有漂亮的麵包圖案，而是有餐車、有烤爐、有夾子、有紙袋，孩子可以從製作到販售一路玩下去。
+      </p>
+      <p>
+        對家長來說，這類附錄也很容易陪玩。只要坐在孩子對面，說一句「我要買麵包」，
+        孩子就能立刻進入角色。它不需要大人花很多時間解釋規則，卻能自然帶出語言、順序、手部操作與想像遊戲，
+        是很符合《めばえ》3・4 歲定位的一期。
+      </p>
+    </section>
+
+    <section>
+      <h2>產品資訊</h2>
+      <div class="info">
+        <div class="label">日文書名</div><div>めばえ 2026年6月号</div>
+        <div class="label">中文參考名</div><div>《めばえ》2026年6月號｜附麵包超人現烤麵包餐車</div>
+        <div class="label">出版社</div><div>小學館</div>
+        <div class="label">發售日</div><div>2026年4月24日左右</div>
+        <div class="label">對象年齡</div><div>3・4歲</div>
+        <div class="label">主要附錄</div><div>アンパンマン やきたて！ パンやさんワゴン</div>
+        <div class="label">附錄中文</div><div>麵包超人現烤麵包餐車</div>
+        <div class="label">本誌內容</div><div>Paw Patrol Skye 的禮物大作戰、Hello Kitty 做便當、麵包超人搭新幹線出門、Thomas 你好 Percy、蠟筆小新刷牙遊戲</div>
+      </div>
+      <p class="source">
+        圖片與資料來源：小學館《めばえ》官方介紹頁。圖片、角色與商標權利歸原權利人所有，本頁為中文整理與親子共玩介紹。
+        原始頁面：<a href="https://sho.jp/mebae/85271" target="_blank" rel="noopener">sho.jp/mebae/85271</a>
+      </p>
+    </section>
+
+    <div class="footer">
+      SeedKidz日本親子選物誌｜親子共讀・日本幼兒雜誌・附錄觀察
+    </div>
+  </main>
+</body>
+</html>
